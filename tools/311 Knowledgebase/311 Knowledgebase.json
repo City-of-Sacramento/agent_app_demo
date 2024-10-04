@@ -1,0 +1,40 @@
+{
+  "name": "8d91f7fc-6e6b-4610-a568-825f75dba788",
+  "displayName": "311 Knowledgebase",
+  "description": "Contains knowledge for frequently asked questions related to the city of Sacramento",
+  "dataStoreSpec": {
+    "dataStoreConnections": [ {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/575241891912/locations/global/collections/default_collection/dataStores/311-faq-unstructured-chunked_1727918003138",
+      "documentProcessingMode": "CHUNKS"
+    } ],
+    "models": {
+      "summarizationModel": {
+        "model": "gemini_15_flash_001"
+      }
+    },
+    "fallbackPrompt": {
+      "company": "City of Sacramento"
+    },
+    "groundingSettings": {
+      "groundingConfidence": "LOW",
+      "disabled": true
+    },
+    "payloadSettings": {
+    
+    }
+  },
+  "actionSchemas": [ {
+    "name": "311 Knowledgebase",
+    "inputParameters": [ {
+      "name": "requestBody",
+      "schema": "{\n  \"required\" : [ \"query\" ],\n  \"type\" : \"object\",\n  \"properties\" : {\n    \"query\" : {\n      \"type\" : \"string\",\n      \"description\" : \"Query for the data store search\"\n    },\n    \"filter\" : {\n      \"type\" : \"string\",\n      \"description\" : \"Filter expression to enhance data store search results.\"\n    },\n    \"userMetadata\" : {\n      \"type\" : \"object\",\n      \"description\" : \"Optional key/value pairs with metadata about the user to refine the data store search query.\"\n    },\n    \"fallback\" : {\n      \"type\" : \"string\",\n      \"description\" : \"Response to provide when no answer is provided by the data store.\"\n    }\n  }\n}",
+      "required": true
+    } ],
+    "outputParameters": [ {
+      "name": "200",
+      "schema": "{\n  \"type\" : \"object\",\n  \"properties\" : {\n    \"answer\" : {\n      \"type\" : \"string\",\n      \"description\" : \"Answer with the highest match confidence\"\n    },\n    \"snippets\" : {\n      \"type\" : \"array\",\n      \"description\" : \"Snippets used to derive the answer\",\n      \"items\" : {\n        \"type\" : \"object\",\n        \"properties\" : {\n          \"uri\" : {\n            \"type\" : \"string\",\n            \"description\" : \"URI of the source used to derive the answer\"\n          },\n          \"text\" : {\n            \"type\" : \"string\",\n            \"description\" : \"Source text used to derive the answer\"\n          },\n          \"title\" : {\n            \"type\" : \"string\",\n            \"description\" : \"Title of the source used to derive the answer\"\n          }\n        }\n      }\n    }\n  }\n}"
+    } ]
+  } ],
+  "toolType": "CUSTOMIZED_TOOL"
+}

@@ -1,0 +1,14 @@
+{
+  "defaultLanguageCode": "en",
+  "timeZone": "America/Los_Angeles",
+  "projectNumber": 575241891912,
+  "advancedSettings": {
+    "loggingSettings": {
+    
+    }
+  },
+  "genAppBuilderSettings": {
+    "engine": "projects/575241891912/locations/global/collections/default_collection/engines/6d9a6650-f2b9-4de3-a457-7a50e1553e49"
+  },
+  "startPlaybook": "311 FAQ Agent"
+}
