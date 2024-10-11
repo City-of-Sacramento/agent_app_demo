@@ -1,12 +1,16 @@
 {
-  "name": "8d91f7fc-6e6b-4610-a568-825f75dba788",
-  "displayName": "311 Knowledgebase",
-  "description": "Contains knowledge for frequently asked questions related to the city of Sacramento",
+  "name": "9caee11b-939f-4334-a26a-0d97567747a0",
+  "displayName": "sd_animal_control",
+  "description": "This tool contains service descriptions for all of the services offered by the animal control department in the City of Sacramento. Additionally, this tool contains frequently asked questions and answers for the animal control department in the City of Sacramento.",
   "dataStoreSpec": {
     "dataStoreConnections": [ {
       "dataStoreType": "UNSTRUCTURED",
-      "dataStore": "projects/575241891912/locations/global/collections/default_collection/dataStores/311-faq-unstructured-chunked_1727918003138",
+      "dataStore": "projects/575241891912/locations/global/collections/default_collection/dataStores/faq-animal-control_1728620542925",
       "documentProcessingMode": "CHUNKS"
+    }, {
+      "dataStoreType": "STRUCTURED",
+      "dataStore": "projects/575241891912/locations/global/collections/default_collection/dataStores/sd-animal-care-2_1728620276158",
+      "documentProcessingMode": "DOCUMENTS"
     } ],
     "models": {
       "summarizationModel": {
@@ -17,15 +21,14 @@
       "company": "City of Sacramento"
     },
     "groundingSettings": {
-      "groundingConfidence": "LOW",
-      "disabled": true
+    
     },
     "payloadSettings": {
     
     }
   },
   "actionSchemas": [ {
-    "name": "311 Knowledgebase",
+    "name": "sd_animal_control",
     "inputParameters": [ {
       "name": "requestBody",
       "schema": "{\n  \"required\" : [ \"query\" ],\n  \"type\" : \"object\",\n  \"properties\" : {\n    \"query\" : {\n      \"type\" : \"string\",\n      \"description\" : \"Query for the data store search\"\n    },\n    \"filter\" : {\n      \"type\" : \"string\",\n      \"description\" : \"Filter expression to enhance data store search results.\"\n    },\n    \"userMetadata\" : {\n      \"type\" : \"object\",\n      \"description\" : \"Optional key/value pairs with metadata about the user to refine the data store search query.\"\n    },\n    \"fallback\" : {\n      \"type\" : \"string\",\n      \"description\" : \"Response to provide when no answer is provided by the data store.\"\n    }\n  }\n}",

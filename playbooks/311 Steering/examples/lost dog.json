@@ -1,0 +1,39 @@
+{
+  "name": "ddc994c7-c10e-4eb8-afda-785ccb2aa075",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Hi"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Hi there, thank you for contacting the City of Sacramento! I'm here to help get you connected with city related resources. What can I do to help?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Are there any resources to help me find my lost dog"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/cos311ivr-demo/locations/global/agents/8790c95d-1d5e-420d-b1a7-739baf162ba1/playbooks/4a5643b0-1dba-4c2e-bf81-c1b297ebc1e4",
+      "playbookInput": {
+        "precedingConversationSummary": "User is looking for resources to help find their lost dog",
+        "actionParameters": {
+        
+        }
+      },
+      "playbookOutput": {
+        "actionParameters": {
+        
+        }
+      },
+      "playbookState": "OUTPUT_STATE_OK"
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "User had a question about a lost dog and was routed to the proper agent"
+  },
+  "displayName": "lost dog",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_PENDING",
+  "languageCode": "en"
+}

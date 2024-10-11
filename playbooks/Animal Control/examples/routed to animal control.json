@@ -1,0 +1,62 @@
+{
+  "name": "3eca7e22-2802-48e1-b3f3-1ec05c3b588c",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Sure, what would you like to know?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "How do I properly dispose of the chicken waste?"
+    }
+  }, {
+    "toolUse": {
+      "tool": "projects/cos311ivr-demo/locations/global/agents/8790c95d-1d5e-420d-b1a7-739baf162ba1/tools/9caee11b-939f-4334-a26a-0d97567747a0",
+      "action": "sd_animal_control",
+      "inputActionParameters": {
+        "requestBody": {
+          "query": "How do I properly dispose of chicken waste in the City of Sacramento?"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "You must remove feces and feathers every 24 hours and store them in an airtight container before disposal. You can use city-issued garbage containers.",
+          "snippets": [ {
+            "text": "Can I keep pet chickens on my property?\n\nWithin the City of Sacramento limits, a resident is allowed to have backyard chickens on their property as long as the following conditions are met. \n\nA maximum of three (3) chickens per residential parcel.\nRoosters are prohibited.\nSlaughtering is prohibited.\nCoop may only be kept in the rear yard.\nCoop may not be closer than 20 feet to the nearest neighboring dwelling.\nCoop must be well-maintained and clean, and be a minimum of 15 square feet and a maximum of 42 square feet.\nCoop must have four walls and a roof and be constructed of suitable material. Chickens must always be confined and properly caged in a coop. Chickens are prohibited from being a noise disturbance.\nChickens must be provided with adequate food, water, a nesting box, and proper ventilation.\nFeed must be stored properly to prevent spoilage and to prevent access to other animals and rodents.\nFeces and feathers must be removed every 24 hours and shall be stored in an airtight container prior to disposal. The use of city-issued garbage containers is acceptable.\nAn annual license and permit are required. There is a  $15 annual coop permit fee and a $10 annual licensing fee per chicken.\n\nTo report backyard chickens not being kept in accordance with the required conditions, please submit a request. ",
+            "title": "Can I keep pet chickens on my property?",
+            "uri": ""
+          }, {
+            "text": "My pet died. Can Front Street help?\n\n \n\nDeceased pets may be buried on the owner's property, taken to a veterinary clinic, pet cemetery, or rendering plant. Some veterinary organizations offer mobile support and may pick up dead animals. Wildlife control companies may also offer on-site services.\t\t\t\t\t\t\t\t\t\t\t\tIn the City of Sacramento, animals weighing less than 10 pounds may be deposited in City garbage containers.",
+            "title": "My pet died. Can Front Street help?",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "You must remove feces and feathers every 24 hours and store them in an airtight container before disposal. You can use city-issued garbage containers. Is there anything else you'd like to know about keeping chickens?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "How many chickens can I have?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "You can keep up to 3 chickens per residential parcel."
+    }
+  }, {
+    "userUtterance": {
+      "text": "Thanks"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user would like to know about keeping chickens in the City of Sacramento."
+  },
+  "playbookOutput": {
+    "executionSummary": "User successfully got answers to all of their questions about keeping chickens in the City of Sacramento."
+  },
+  "displayName": "routed to animal control",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_PENDING",
+  "languageCode": "en"
+}

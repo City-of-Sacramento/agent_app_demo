@@ -1,0 +1,116 @@
+{
+  "name": "f80ae0a5-1182-4553-a091-2d0578c6b1dc",
+  "displayName": "Chicken FAQ",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "Hi there, thank you for contacting the City of Sacramento! I'm here to help get you connected with city related resources. What can I do to help?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I have a question about keeping pet chickens"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "Sure, what would you like to know?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "how many chickens can I have?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "You can have up to 3 chickens per residential parcel. Is there anything else you'd like to know about keeping chickens?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How do I dispose of chicken waste?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "You must remove feces and feathers every 24 hours and store them in an airtight container before disposal. You can use city-issued garbage containers. Is there anything else you'd like to know about keeping chickens?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "No"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "Is there anything else I can help you with?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Nope"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "Thank you for contacting the City of Sacramento, have a great day!" ]
+      } ]
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "execution_summary",
+        "value": "User was routed to the animal control agent. The animal control agent completed the user's task and user was routed back to you. You asked if there's anything else they need help with, to which the user responded no. You thanked them and said goodbye."
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1728671382,
+    "nanos": 108678000
+  },
+  "testConfig": {
+    "useCaseDescription": "Get answers related to keeping backyard chickens in the City of Sacramento"
+  },
+  "expectedTestCaseResult": {
+    "expectedActions": [ {
+      "toolUse": {
+        "tool": "projects/cos311ivr-demo/locations/global/agents/8790c95d-1d5e-420d-b1a7-739baf162ba1/tools/9caee11b-939f-4334-a26a-0d97567747a0"
+      }
+    } ]
+  },
+  "languageCode": "en"
+}

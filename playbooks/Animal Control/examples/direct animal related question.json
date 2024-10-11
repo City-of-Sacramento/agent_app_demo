@@ -1,0 +1,56 @@
+{
+  "name": "c3fd75f0-ff8d-420c-ac77-0c83a2dc886c",
+  "actions": [ {
+    "toolUse": {
+      "tool": "projects/cos311ivr-demo/locations/global/agents/8790c95d-1d5e-420d-b1a7-739baf162ba1/tools/9caee11b-939f-4334-a26a-0d97567747a0",
+      "action": "sd_animal_control",
+      "inputActionParameters": {
+        "requestBody": {
+          "query": "How many chickens can I keep in the city of Sacramento?"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "You can keep a maximum of 3 chickens per residential parcel. Roosters are prohibited.",
+          "snippets": [ {
+            "text": "Can I keep pet chickens on my property?\n\nWithin the City of Sacramento limits, a resident is allowed to have backyard chickens on their property as long as the following conditions are met. \n\nA maximum of three (3) chickens per residential parcel.\nRoosters are prohibited.\nSlaughtering is prohibited.\nCoop may only be kept in the rear yard.\nCoop may not be closer than 20 feet to the nearest neighboring dwelling.\nCoop must be well-maintained and clean, and be a minimum of 15 square feet and a maximum of 42 square feet.\nCoop must have four walls and a roof and be constructed of suitable material. Chickens must always be confined and properly caged in a coop. Chickens are prohibited from being a noise disturbance.\nChickens must be provided with adequate food, water, a nesting box, and proper ventilation.\nFeed must be stored properly to prevent spoilage and to prevent access to other animals and rodents.\nFeces and feathers must be removed every 24 hours and shall be stored in an airtight container prior to disposal. The use of city-issued garbage containers is acceptable.\nAn annual license and permit are required. There is a  $15 annual coop permit fee and a $10 annual licensing fee per chicken.\n\nTo report backyard chickens not being kept in accordance with the required conditions, please submit a request. ",
+            "title": "Can I keep pet chickens on my property?",
+            "uri": ""
+          }, {
+            "text": "Can mini potbelly pigs be kept as pets?\n\nMiniature (potbelly) pigs are permitted as pets in Sacramento City. Pigs must be licensed within 30 days of becoming residents of Sacramento. All male potbelly pigs must be neutered, licensed, and have rabies shot by four weeks old.  Licenses are obtained through the Front Street Shelter. A pig kept within city limits may not be more than 22\" high at the shoulder nor weigh more than 150 pounds. There is a limit of three pigs per property; pigs count toward the same household limit as dogs (combined limit of 3).  All potbelly pigs must wear a collar with its license tag attached.   Once a potbelly pig weighs more than 150 lbs and/or stands higher than 22 inches at the shoulder, it is considered a swine and will need to be removed from the property- unless the property is grandfathered for agriculture.If you suspect an overgrown pig is being kept as a pet in an improperly zoned area, please submit a case. ",
+            "title": "Can mini potbelly pigs be kept as pets?",
+            "uri": ""
+          }, {
+            "text": "How many pets can one home have?\n\nEach household within the city limits of Sacramento can have no more than 3 dogs and 7 cats. A dog is counted towards that limit if the dog is over the age of 4 months, while a cat is counted towards that limit if the cat is over the age of 2 months (see Sacramento City Code 9.44.370). Service animals do not count towards these totals. In addition, it is permissible for a resident within the city limits of Sacramento to own a potbelly pig. A potbelly pig cannot be more than 22 inches high at the shoulder or weigh more than 150 pounds. Also, any male potbelly pig over the age of 4 months must be neutered (see Sacramento City Code 9.44.320). The number of potbelly pigs allowed is no more than 3, however, this limit is connected to the limit of dogs. In other words, a resident is not allowed more than a combination of 3 dogs and potbelly pigs.To report a home exceeding the allowed limits, please submit a request.",
+            "title": "How many pets can one home have?",
+            "uri": ""
+          }, {
+            "text": "Can rabbits be kept as pets?\n\nRabbits are permitted as pets in Sacramento City.  Rabbits must not be free-roaming - that is, they must remain on their own property. Up to three rabbits may be kept per property.Rabbits are permitted only as pets; animals kept for other purposes are considered livestock and are prohibited.",
+            "title": "Can rabbits be kept as pets?",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "You can keep up to 3 chickens per residential parcel. Is there anything else you'd like to know about keeping chickens?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "No"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "User had a direct question related to keeping chickens in the City of Sacramento"
+  },
+  "playbookOutput": {
+    "executionSummary": "Task complete.",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "direct animal related question",
+  "retrievalStrategy": "DEFAULT",
+  "languageCode": "en"
+}

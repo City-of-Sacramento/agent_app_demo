@@ -1,0 +1,50 @@
+{
+  "name": "dc1bc349-8746-4774-99c9-435f38732dcc",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Hi"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Hi there, thank you for contacting the City of Sacramento! I'm here to help get you connected with city related resources. What can I do to help?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "I have a question about keeping chickens"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/cos311ivr-demo/locations/global/agents/8790c95d-1d5e-420d-b1a7-739baf162ba1/playbooks/4a5643b0-1dba-4c2e-bf81-c1b297ebc1e4",
+      "playbookInput": {
+        "actionParameters": {
+        
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "Task complete.",
+        "actionParameters": {
+        
+        }
+      },
+      "playbookState": "OUTPUT_STATE_OK"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Is there anything else I can help you with?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "No, that's it"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Thank you for contacting the City of Sacramento, have a great day!"
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "User was routed to the animal control agent. The animal control agent completed the user's task and user was routed back to you. You asked if there's anything else they need help with, to which the user responded no. You thanked them and said goodbye."
+  },
+  "displayName": "general steering conversation",
+  "retrievalStrategy": "DEFAULT",
+  "languageCode": "en"
+}

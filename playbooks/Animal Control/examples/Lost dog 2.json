@@ -1,0 +1,52 @@
+{
+  "name": "43c119bc-75e1-437b-957a-231f78b1c4e0",
+  "actions": [ {
+    "toolUse": {
+      "tool": "projects/cos311ivr-demo/locations/global/agents/8790c95d-1d5e-420d-b1a7-739baf162ba1/tools/9caee11b-939f-4334-a26a-0d97567747a0",
+      "action": "sd_animal_control",
+      "inputActionParameters": {
+        "requestBody": {
+          "query": "How can I find my lost dog in the City of Sacramento?"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "You can text LOST to 833-511-0426 to get video tutorials, links to pages to post your lost pet, and a link to the shelter’s new animals every 3 days. You can also go to the City of Sacramento's website to view a list of stray animals that is updated every hour.",
+          "snippets": [ {
+            "text": "Can you help me find a lost pet?\n\nIf your pet has been lost, we encourage you to text LOST to 833-511-0426 to get video tutorials, links to pages to post your lost pet, and a link to the shelter’s new animals every 3 days. You can also go to https://www.cityofsacramento.org/Community-Development/Animal-Care/Lost-and-Found.Our online listing of stray animals is updated every hour. The online listing only displays LIVE animals that were either picked up by one of our animal control officers or brought to the shelter by concerned citizens. Deceased animals are NOT shown on the website, but their descriptions and location found are listed in a binder at the shelters front office.  Animals dropped off to the shelter will be held for a minimum of 3 days in order to give an owner the opportunity to look for his/her lost pet. The hold is extended if an animal has a microchip or if an animal is wearing a license tag, a rabies tag, and/or a personalized tag. If we receive information that the owner has been incarcerated or hospitalized, we will extend the hold in those situations as well. Once the holding period has ended, an animal may be placed for adoption, transferred to another shelter or rescue group, or be placed in the shelter's foster care system. An animal may be euthanized immediately if the animal is suffering from a serious medical condition or injury and/or is not responding to treatment. Also, if an animal does not pass the behavior evaluation, the animal may be euthanized.",
+            "title": "Can you help me find a lost pet?",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "I'm sorry to hear that. You can text LOST to 833-511-0426 to get video tutorials, links to pages to post your lost pet, and a link to the shelter’s new animals every 3 days. You can also go to the City of Sacramento's website to view a list of stray animals that is updated every hour. If you have any more questions about finding lost pets, please don't hesitate to ask."
+    }
+  }, {
+    "userUtterance": {
+      "text": "Are there any other resources you can give me?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Yes, you can also contact the Sacramento SPCA at (916) 383-7387 or visit their website at https://www.sspca.org/. They may have additional resources and information that can help you find your dog."
+    }
+  }, {
+    "userUtterance": {
+      "text": "Thank you"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "User is looking for help finding their dog"
+  },
+  "playbookOutput": {
+    "executionSummary": "Task complete.",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Lost dog 2",
+  "retrievalStrategy": "DEFAULT",
+  "languageCode": "en"
+}

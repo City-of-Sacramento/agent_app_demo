@@ -1,0 +1,51 @@
+{
+  "name": "e7e3b10e-10a1-4daa-9e28-36680df54aa5",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Hi"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Hi there, thank you for contacting the City of Sacramento! I'm here to help get you connected with city related resources. What can I do to help?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "how many chickens can I keep in my backyard?"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/cos311ivr-demo/locations/global/agents/8790c95d-1d5e-420d-b1a7-739baf162ba1/playbooks/4a5643b0-1dba-4c2e-bf81-c1b297ebc1e4",
+      "playbookInput": {
+        "precedingConversationSummary": "User asked a direct question about how many chickens they are allowed to keep in their backyard",
+        "actionParameters": {
+        
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "Task complete.",
+        "actionParameters": {
+        
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Is there anything else I can help you with?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "No"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Thank you for contacting the City of Sacramento. Have a great day!"
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "User had a direct question related to animal control and got all of their questions answered by the Animal Control agent before they were routed back to you. You asked if they needed further assistance and they did not. You bid them farewell."
+  },
+  "displayName": "direct question",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}
